@@ -81,8 +81,10 @@ header .content{
 
 #content_header{
     width: 100%;
-    height: 100px;
-    background-color: gold;
+    height: auto;
+    background-color: blue;
+    /* background-color: red; */
+    color: white;
 }
 
 
