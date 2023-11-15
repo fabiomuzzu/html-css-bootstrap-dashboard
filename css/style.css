@@ -81,6 +81,7 @@ header .content{
 #central{
     width: calc(100vw - 100px);
     height: calc(100vh - 80px);
+    overflow: auto;
 }
 
 #content_header{
