@@ -11,7 +11,7 @@ body{
 .full_section{
     width: 100%;
     height: calc(100vh - 80px);
-    background-color: gray;
+    background-color: green;
 }
 
 
@@ -22,7 +22,8 @@ img{
 
 /* BACKGROUND COLORS */
 .bg_darkblue{
-    background-color: pink;
+    background-color: #12293f;
+    background-image: url(../img/sidebar-bg.png);
 }
 
 .bg_gray{
@@ -58,9 +59,9 @@ header .content{
 }
 
 #sidebar .content{
-    width: 30px;
-    height: 30px;
-    background: gold;
+    width: 100%;
+    height: auto;
+    color: white;
 }
 
 .col_sidebar{
@@ -69,7 +70,6 @@ header .content{
     flex-direction: column;
     justify-content: space-between;
 }
-
 
 
 
