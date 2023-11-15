@@ -16,8 +16,8 @@
 
         <header>
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-4">
+                <div class="row justify-content-between">
+                    <div class="col-2">
                         <div class="content d-lg-none">
                             <div class="logo_mobile">
                                 <img src="./img/mobile-logo.png" alt="">
@@ -29,16 +29,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="content">
-                          
+                    <div class="col-auto">
+                        <div class="content d-flex align-items-center">
+                            <div class="input-group rounded">
+                                <span class="input-group-text border-end-0 bg_gray" id="search-addon">
+                                  <i class="fas fa-search"></i>
+                                </span>
+                                <input type="search" class="form-control border-start-0 bg_gray" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="search-addon" />
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-4">
-                        <div class="content">
-                          
+                    </div>
+                    <div class="col-2">
+                        <div class="content d-lg-none d-flex justify-content-end align-items-center">
+                            <i class="fas fa-bell link-warning"></i>
                         </div>
-                      </div>
+                        <div class="content d-lg-flex justify-content-end align-items-center d-none">
+                            <i class="fas fa-bars px-2"></i>
+                            <i class="fa-solid fa-circle-question px-2"></i>
+                            <i class="fa-solid fa-ellipsis-vertical px-2"></i>
+                            <i class="fas fa-bell link-warning px-2"></i>
+                        </div>
+                    </div>
                 </div>
             </div> 
         </header>
