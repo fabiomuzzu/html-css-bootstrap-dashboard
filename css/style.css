@@ -30,6 +30,11 @@ img{
     background-color: #e5e5e5;
 }
 
+/* background badge */
+.bg_blue_badge{
+    background-color: #165bba;
+}
+
 /* HEADER */
 header{
     position: relative;
@@ -82,12 +87,9 @@ header .content{
 #content_header{
     width: 100%;
     height: auto;
-    background-color: blue;
-    /* background-color: red; */
+    background-color: #1b72e8;
     color: white;
 }
-
-
 
 @media screen and (min-width:991px){
     #sidebar{
@@ -97,4 +99,12 @@ header .content{
     #central{
         width: calc(100vw - 250px);
     }
+}
+
+/* sezione header in sezione centrale*/
+
+.more_student{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
 }
