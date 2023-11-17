@@ -110,8 +110,10 @@
                                 <div class="col-12 col-md-4 order-md-2">
                                     <div class="content my-4">
                                         <span>Nuovo Studente</span>
-                                        <div class="d-inline-block mx-3 more_student">
-                                            <span>+</span>
+                                        <div class="d-inline-block mx-3">
+                                            <button class="btn btn-primary border-white button-add" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                            aria-controls="offcanvasRight"><i class="fas fa-plus"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -239,7 +241,7 @@
                                                     <div id="collapseOne" class="accordion-collapse collapse show"
                                                         data-bs-parent="#accordionExample">
                                                         <div class="accordion-body">
-                                                            Lorem
+                                                            Clicca sul "+" in alto nella seazione blu.*
                                                         </div>
                                                     </div>
                                                 </div>
@@ -253,7 +255,7 @@
                                                     <div id="collapseTwo" class="accordion-collapse collapse"
                                                         data-bs-parent="#accordionExample">
                                                         <div class="accordion-body">
-                                                            Lorem
+                                                            Clicca sull'icone della campanella.
                                                         </div>
                                                     </div>
                                                 </div>
@@ -305,7 +307,7 @@
 
                                 <!-- Chart -->
                                 <div class="content my-4">
-                                    <div class="card">
+                                    <div class="card p-4">
                                         <img src="./img/stats.jpeg" alt="">
                                         <div class="card-body">
                                             <h5 class="card-title">Utenti attivi</h5>
@@ -317,10 +319,94 @@
                                             <li class="list-group-item">Febbraio: 800</li>
                                             <li class="list-group-item">Marzo: 1500</li>
                                         </ul>
+                                        <div class="card-body">
+                                            <a href="">Visualizza report approfondito</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offcanvas nuovo studente -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="width: 576px;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="container-fluid">
+                        <form class="row">
+                            <div class="col-12 col-sm-6">
+                                <label for="first-name">Nome</label>
+                                <input type="text" class="form-control" placeholder="Nome" id="first-name" aria-label="first-name">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="mb-2">
+                                    <label for="last-name">Cognome</label>
+                                    <input type="text" class="form-control" placeholder="Cognome" id="last-name" aria-label="last-name">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="mb-2">
+                                    <label for="email">Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="icon-email">@</span>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="mb-2">
+                                    <label for="Password">Password</label>
+                                    <input type="text" class="form-control" placeholder="Password" id="password" aria-label="password">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-2">
+                                    <label for="addres">Indirizzo</label>
+                                    <input type="text" class="form-control" id="address" aria-label="address">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="mb-2">
+                                    <label for="Città">Città</label>
+                                    <input type="text" class="form-control" id="città" aria-label="città">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="mb-2">
+                                    <label for="State">Stato</label>
+                                    <select class="form-select" id="state" aria-label="State">
+                                        <option selected>Scegli...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="mb-2">
+                                    <label for="Città">CAP</label>
+                                    <input type="text" class="form-control" id="città" aria-label="città">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Foto</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                  </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <button type="submit" class="btn btn-primary">Salva</button>
+                                <button type="reset" class="btn btn-warning">Svuota</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
