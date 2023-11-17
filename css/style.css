@@ -75,7 +75,15 @@ header .content{
     justify-content: space-between;
 }
 
+#sidebar ul li i{
+    font-size: 20px;
+}
 
+#sidebar ul li:hover{
+    background-color: gray;
+    cursor: pointer;
+
+}
 
 /* CENTRAL SECTION */
 #central{
@@ -93,14 +101,18 @@ header .content{
 
 @media screen and (min-width:991px){
     #sidebar{
-        width: 250px;
+        width: 180px;
     }
 
     #central{
-        width: calc(100vw - 250px);
+        width: calc(100vw - 180px);
     }
 }
 
+#new_student:hover{
+    background-color: white;
+    color: blue;
+}
 
 /* Sezione tabelle */
 .bg_fa-code{
@@ -111,13 +123,6 @@ header .content{
     border-radius: 50%;
 }
 
-.bg_done{
-    margin-right: 10px;
-    padding: 3px 7px;
-    color: white;
-    background-color: green;
-    border-radius: 10px;
-}
 
 .actions{
     color: gray;
